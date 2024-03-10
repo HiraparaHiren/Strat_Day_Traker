@@ -1,3 +1,7 @@
 streamlit
 beautifulsoup4
 Pool
+pandas
+requests
+datetime
+concurrent.futures
