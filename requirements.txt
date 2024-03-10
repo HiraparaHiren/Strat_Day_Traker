@@ -5,4 +5,4 @@ Pool
 pandas
 requests
 datetime
-concurrent.futures
+concurrent.futures = '1.1.0'
