@@ -1,8 +1,7 @@
-pip
 streamlit
 beautifulsoup4
 Pool
 pandas
 requests
 datetime
-# concurrent.futures = '1.1.0'
+
