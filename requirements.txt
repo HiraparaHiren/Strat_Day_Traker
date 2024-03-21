@@ -4,3 +4,4 @@ Pool
 pandas
 requests
 datetime
+streamlit.concurrent
