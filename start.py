@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 import requests
 from datetime import datetime, timedelta
-import streamlit.concurrent
+import streamlit.legacy_concurrency as st_concurrency
 
 class MControlAPI:
     def __init__(self, symbol, resolution=1, data_from=None, data_to=None):
@@ -73,7 +73,7 @@ def main():
 
             dataframes = []
             for symbol in symbols:
-                dataframes.append(streamlit.concurrent.st_concurrent(process_symbol, symbol, data_to_string))
+                dataframes.append(st_concurrency.st_concurrent(process_symbol, symbol, data_to_string))
 
             dataframes = [result for result in dataframes if not result.empty]
 
